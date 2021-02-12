@@ -36,7 +36,7 @@ The main dataset used for estimating the IG epoch. This contains data collected 
     The date-time obtained after converting the above unix time into UTC.
     
 * epoch_estimate (utc):
-    The estimate IG epoch values calculated using the creation time of the ID and the published time from the HTML.
+    The estimated IG epoch values calculated using the creation time of the ID and the published time from the HTML.
 
         published_time: The value extracted from the HTML (taken_at_timestamp) which is the number of seconds from the UNIX epoch (say, Tp).
         creation_time: The value extracted from the shortcode/media ID which is the number of milliseconds from the  IG epoch (say, Tc).
@@ -44,7 +44,7 @@ The main dataset used for estimating the IG epoch. This contains data collected 
 
 
 * is_multiple:
-    Wether this post contains multiple media or not.   
+    Whether this post contains multiple media or not.   
     
         True: Multiple media post
         False: Single media post
@@ -53,11 +53,11 @@ The main dataset used for estimating the IG epoch. This contains data collected 
     If it is a multiple media post, how many media items does it contain.
     
 * is_video: 
-    Is this an image or a video.
+    Is this an image or a  video?
     
         True: Single media video post
         False: Image (single or multiple media) 
-        "Contains at least one video": A multiple media post which contains atleast one video media item.
+        "Contains at least one video": A multiple media post which contains at least one video media item.
     
 * vid_duration	
     The duration of the video.
@@ -76,8 +76,15 @@ The JSON content of a multiple media post which contains an image and a video (h
 ## Code
 
 ### estimating_epoch.py
+
+The code takes list of shortcodes as the input to extract the above mentioned data from instagram using the selenium webdriver. he epoch estimates are also computed in this same code.   
+
 ### calculate_delta.py
 
+As the final step, the difference between 2011-08-24T21:07:00Z and the date-time values in the IG epoch estimate column is calculated using this code.
+
 ## Blog
+
+This dataset is compiled as a part of the study conducted to study the discrepency between creation time of ID and publishing time of a post in Instagram.
 
 ### Link: 
