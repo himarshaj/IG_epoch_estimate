@@ -63,7 +63,7 @@ The main dataset used for estimating the IG epoch. This contains data collected 
     The duration of the video.
     (The video durations are available for the single video posts only)
     
-* off_by:
+* delta:
     The difference between 2011-08-24T21:07:00Z and the date-time values in the IG epoch estimate column
 
 
