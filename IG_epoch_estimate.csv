@@ -1,4 +1,4 @@
-shortcode,media_id,creation_time (seconds wrt IG epoch),published_time (unix),published_time (utc),epoch_estimate (utc),is_multiple,count,is_video,vid_duration,off_by
+shortcode,media_id,creation_time (seconds wrt IG epoch),published_time (unix),published_time (utc),epoch_estimate (utc),is_multiple,count,is_video,vid_duration,delta
 B01V7Q3gZLh,2104684832402540000,250897983.6,1565118005,2019-08-06 19:00:05,2011-08-24 21:07:01,TRUE,2,FALSE,None,1
 B0d16GeHHwP,2098070090566890000,250109444.9,1564329466,2019-07-28 15:57:46,2011-08-24 21:07:01,FALSE,None,FALSE,None,1
 B0FYvwAnKsU,2091186436465010000,249288849.4,1563508920,2019-07-19 4:02:00,2011-08-24 21:07:50,FALSE,None,TRUE,19.148,50
